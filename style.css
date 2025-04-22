@@ -27,7 +27,7 @@ body {
     position: relative;
     /*justify-content: unset;*/
     /*flex-wrap: initial!important;*/
-    padding: 0.5rem;
+    padding: 0.25rem;
     width: 100%;
 }
 .flex {
@@ -93,11 +93,11 @@ body {
     font-weight: 700;
     color: var(--text);
     text-decoration: none;
-    width: 12%;
+    width: 30%;
     padding: 0.5rem;
     margin-left: 4rem;
     filter: brightness(0) saturate(100%) invert(83%) sepia(40%) saturate(481%) hue-rotate(358deg) brightness(103%) contrast(107%);
-    max-width: 180px;
+    max-width: 420px;
     height: auto;
     transition: all 0.3s ease;
 }
@@ -362,15 +362,18 @@ a {
     .container {
         justify-content: center;
     }
+    .navbar {
+        padding: 0.15rem;
+    }
     .logo {
         font-size: 1.5rem;
         font-weight: 700;
         color: var(--text);
         text-decoration: none;
-        width: 30%;
-        padding: 0.1rem;
+        width: 75%;
+        padding: 0.05rem;
         margin-left: 1rem;
-        max-width: 120px;
+        max-width: 300px;
         height: auto;
     }
     .logo:hover {
