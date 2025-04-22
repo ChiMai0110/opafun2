@@ -97,12 +97,13 @@ body {
     padding: 0.5rem;
     margin-left: 4rem;
     filter: brightness(0) saturate(100%) invert(83%) sepia(40%) saturate(481%) hue-rotate(358deg) brightness(103%) contrast(107%);
-    transform: scale(4.8);
-    transition: transform 0.3s ease;
+    max-width: 180px;
+    height: auto;
+    transition: all 0.3s ease;
 }
 
 .logo:hover {
-    transform: scale(5.2);
+    opacity: 0.9;
 }
 
 .logo-text {
@@ -366,13 +367,14 @@ a {
         font-weight: 700;
         color: var(--text);
         text-decoration: none;
-        width: 18%;
+        width: 30%;
         padding: 0.1rem;
-        margin-left: 2rem;
-        transform: scale(4.4);
+        margin-left: 1rem;
+        max-width: 120px;
+        height: auto;
     }
     .logo:hover {
-        transform: scale(4.8);
+        opacity: 0.9;
     }
     .logo-text {
         font-weight: bold;
