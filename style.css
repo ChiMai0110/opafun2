@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #471db8;
-    --primary-color-dark:  #180b3c;
+    --primary-color: #b81d3d;
+    --primary-color-dark: #8a152e;
     --text-color: #ffffff;
-    --bg-dark:  #180b3c;
-    --bg-darker:  #180b3c;
+    --bg-dark: #8a152e;
+    --bg-darker: #8a152e;
     --font-family: 'Montserrat', Arial, sans-serif;
     --highlight: #d6fa06;
 }
@@ -20,10 +20,10 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     line-height: 1.6;
-    background-color: #180b3c;
+    background-color: #8a152e;
 }
 .navbar {
-    background-color: #4519a0;
+    background-color: #b81d3d;
     position: relative;
     /*justify-content: unset;*/
     /*flex-wrap: initial!important;*/
@@ -34,7 +34,7 @@ body {
 .flex {
     display: flex;
 }
-.footer { background-color: #4519a0; padding: 20px; text-align: center; color: white; }
+.footer { background-color: #b81d3d; padding: 20px; text-align: center; color: white; }
 .hero {
     height: 30vh;
     background: url('img/opafun-cover.png') center/cover;
@@ -51,7 +51,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 4, 48, 0.76);
+    background: rgba(138, 21, 46, 0.76);
 }
 .hero-contact {
     height: 30vh;
@@ -69,7 +69,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 4, 48, 0.85);
+    background: rgba(138, 21, 46, 0.85);
 }
 .hero-testimonials {
     height: 30vh;
@@ -87,7 +87,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 4, 48, 0.85);
+    background: rgba(138, 21, 46, 0.85);
 }
 .logo {
     font-size: 1.5rem;
@@ -159,21 +159,21 @@ body {
 }
 .bg-primary {
     --bs-bg-opacity: 1;
-    background-color: #4519A0FF!important;
+    background-color: #b81d3d !important;
 }
 .badge {
     --bs-bg-opacity: 1;
-    background-color: #4519A0FF!important;
+    background-color: #b81d3d !important;
 }
 .pagination {
     justify-content: center !important;
-    --bs-pagination-active-bg: #4519a0;
+    --bs-pagination-active-bg: #b81d3d;
     --bs-pagination-color: #fff;
-    --bs-pagination-bg: #180b3c;
+    --bs-pagination-bg: #8a152e;
     --bs-pagination-active-color: #fff;
-    --bs-pagination-hover-bg: #4519a0;
+    --bs-pagination-hover-bg: #b81d3d;
     --bs-pagination-hover-color: #fff;
-    --bs-pagination-disabled-bg: #180b3c;
+    --bs-pagination-disabled-bg: #8a152e;
     --bs-pagination-disabled-color: #ffffff;
 }
 .breadcrumb-item.active {
@@ -310,7 +310,7 @@ a {
 }
 .list-group-flush>.list-group-item {
     border-width: 0 0;
-    background: #180b3c!important;
+    background: #8a152e!important;
     color: #fff;
 }
 .card-body {
@@ -422,12 +422,12 @@ a {
 }
 
 .footer {
-    background: #4519a0;
+    background: #b81d3d;
     padding: 2rem 2rem;
     text-align: center;
 }
 .footer-top {
-    background: #27155a;
+    background: #8a152e;
     padding: 1rem;
     text-align: center;
 }
@@ -503,5 +503,105 @@ a {
     }
     .footer-links {
         display: block;
+    }
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(24, 11, 60, 0.95);
+    color: #fff;
+    padding: 1.5rem;
+    z-index: 1000;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cookie-banner.show {
+    transform: translateY(0);
+}
+
+.cookie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.cookie-text {
+    flex: 1;
+}
+
+.cookie-text h3 {
+    color: #D4AF37;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.cookie-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.cookie-btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cookie-btn-accept {
+    background-color: #D4AF37;
+    color: #180b3c;
+}
+
+.cookie-btn-accept:hover {
+    background-color: #B38F2D;
+    transform: translateY(-2px);
+}
+
+.cookie-btn-settings {
+    background-color: transparent;
+    color: #D4AF37;
+    border: 2px solid #D4AF37;
+}
+
+.cookie-btn-settings:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .cookie-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cookie-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .cookie-text h3 {
+        font-size: 1.1rem;
+    }
+    
+    .cookie-text p {
+        font-size: 0.85rem;
     }
 }
