@@ -11,7 +11,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="w-50">
-        <a href="index.html"><img src="img/Imigliorihotelit-logo.png" alt="logo" class="logo"></a>
+        <a href="index.html"><img src="img/Imigliorihotelit-logo-vertical.png" alt="logo" class="logo"></a>
     </div>
     <div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -86,15 +86,29 @@
         </div>
     </section>
 
-    <section class="contact-form">
-        <h2>Contattaci</h2>
-        <p class="text-center">Prenota la tua prossima esperienza premium.</p>
-        <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Il tuo Nome" required>
-            <input type="email" name="email" placeholder="La tua Email" required>
-            <textarea name="message" rows="5" placeholder="Il tuo Messaggio" required></textarea>
-            <button type="submit">Invia Richiesta</button>
-        </form>
+    <section class="contact-form py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center mb-4">Contattaci</h2>
+                    <p class="text-center mb-4">Prenota la tua prossima esperienza premium.</p>
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <input type="text" name="name" class="form-control" placeholder="Il tuo Nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" class="form-control" placeholder="La tua Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" class="form-control" rows="5" placeholder="Il tuo Messaggio" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-main">Invia Richiesta</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
